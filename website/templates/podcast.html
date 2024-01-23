@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Crypto Talks - Podcast{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/podcast.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/audio_player.css') }}">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+{% endblock %}
+
+{% block content %}
+<div class="mid">
+    <div class="container display">
+        <div class="container_cover">
+            <img class="cover" src="{{ url_for('static', filename='img/cover.png') }}">
+
+            <div class="container_button">
+                <a href="{{ url_for('views.subscribe') }}">
+                    <button class="button subscribe space">Subscribe to Podcast</button>
+                </a>
+
+                <a href="{{ url_for('static', filename='podcast/'+podcast.file_path) }}" download="{{podcast.title}}">
+                    <button class="button subscribe space">Download</button>
+                </a>
+            </div>
+        </div>
+        <div class="container_text">
+            <div class="title space">
+                {{ podcast.title }}
+            </div>
+            <div class="description space">
+                {{ podcast.description }}
+            </div>
+
+            <div class="audio_player">
+                <audio class="audio-nfs" src="{{ url_for('static', filename='podcast/'+podcast.file_path) }}"></audio>
+                <div class="tl-nfsplayer">
+                    <div class="tl-nfs-player-box">
+                        <div class="tl-nfs-player-arrow">
+                            <div class="tl-nfs-backward">
+                                <i class="fal fa-backward"></i>
+                            </div>
+                            <div class="tl-nfs-play">
+                                <i class="fal fa-play"></i>
+                            </div>
+                            <div class="tl-nfs-forward">
+                                <i class="fal fa-forward"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tl-nfs-slidecontainer">
+                        <div class="time-podcast1">
+                            00:00
+                        </div>
+                        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                        <div class="nfs-buffer"></div>
+                        <div class="time-podcast2">
+                            00:00
+                        </div>
+                    </div>
+                    <div class="tl-nfs-volume">
+                        <div class="vlm-icon">
+                            <i class="fal fa-volume-up"></i>
+                        </div>
+                        <div class="tl-nfs-slidecontainer-volume">
+                            <input type="range" min="1" max="100" value="50" class="volume-mohtva" id="myvloume">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block js %}<script src="{{ url_for('static', filename='js/podcast.js') }}"></script>{% endblock %}

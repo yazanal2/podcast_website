@@ -1,0 +1,23 @@
+.container_subscribe {
+  display: block;
+  width: 100vw;
+}
+
+.container_youtube,
+.container_twitter,
+.container_instagram {
+  width: 90%;
+  background-color: #1b0053;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  margin: 3rem auto 0 auto;
+}
+
+@media all and (min-width: 1200px) {
+  .container_youtube,
+  .container_twitter,
+  .container_instagram {
+    width: 33%;
+  }
+}

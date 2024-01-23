@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Crypto Talks - Ask{% endblock %}
+
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/ask.css') }}">{% endblock %}
+
+{% block content %}
+<div class="mid">
+    <div class="container_ask">
+        <form method="POST" enctype=multipart/form-data style="margin-left: 30%;margin-right: 30%;">
+            <h3 align="center">Frag Crypto Talks</h3>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Dein Name"
+                />
+            </div>
+            <div class="form-group">
+                <label for="question">Frage</label>
+                <textarea
+                    type="text"
+                    class="form-control"
+                    id="question"
+                    name="question"
+                    cols="40"
+                    rows="5"
+                    placeholder="Deine Frage"></textarea>
+            </div>
+            <br/>
+            <button type="submit" class="btn btn-primary" style="background-color: #ff0055; border-color: transparent;">Submit</button>
+          </form>
+    </div>
+</div>
+{% endblock %}

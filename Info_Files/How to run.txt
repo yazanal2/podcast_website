@@ -1,0 +1,12 @@
+python3 muss installiert sein.
+
+Vor dem ersten ausführen:
+
+1. cmd im Hauptordner(dort wo main.py ist)  öffnen 
+2. pip install -r requirements.txt
+
+
+Danach:
+1. cmd im Hauptordner(dort wo main.py ist)  öffnen 
+2. python main.py
+3. Im Browser auf http://127.0.0.1:5000/ gehen

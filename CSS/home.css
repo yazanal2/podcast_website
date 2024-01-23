@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+}
+
+.oben {
+  color: white;
+  background-color: #1b0053;
+}
+
+.button.subscribe {
+  border-radius: 3.125rem;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  font-size: 80%;
+  position: relative;
+  background-color: #ff0055;
+  border-color: black;
+  color: #fff;
+}
+
+.box {
+  display: block;
+}
+
+.titel {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.beschreibung {
+  margin: 0 auto;
+  max-width: 20rem;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.knopfbox {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.coverbox {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.followbox {
+  font-weight: 700;
+  display: flex;
+  margin-left: 1.5rem;
+}
+
+.abstand {
+  padding: 1rem 0;
+}
+
+.fa {
+  padding: 10px 12px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #fff;
+  color: #1b0053;
+}
+
+.fa-youtube {
+  background: #fff;
+  color: #1b0053;
+}
+
+.fa-instagram {
+  background: #fff;
+  color: #1b0053;
+}
+
+.unten {
+  background-color: #f5f5f5;
+  padding-bottom: 5rem;
+}
+
+.follow_text {
+  margin: auto 1rem auto 0;
+}
+
+.cards_home {
+  grid-auto-rows: minmax(100px, auto);
+  display: grid;
+  grid-gap: 5rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  width: 18rem;
+  margin: 2rem auto;
+}
+
+.card-img-top {
+  padding: 1.25rem;
+}
+
+.card-metadata {
+  margin-bottom: 1rem;
+}
+
+.card-titel {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  margin-bottom: 3rem;
+}
+
+.icon_chapter,
+.icon_duration {
+  width: 1rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+@media all and (min-width: 1200px) {
+  .box {
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4% 0;
+    display: flex;
+  }
+
+  .coverbox {
+    width: 40%;
+    padding-right: 5rem;
+  }
+
+  .cover {
+    width: 100%;
+    height: auto;
+  }
+
+  .titel {
+    font-size: 2.25rem;
+    text-align: left;
+    margin: 1rem 0;
+  }
+
+  .beschreibung {
+    line-height: 2.2;
+    font-size: 1rem;
+    max-width: 50rem;
+    margin-bottom: 3rem;
+  }
+
+  .button.subscribe {
+    padding: 1.2rem 2.4rem;
+    font-size: 100%;
+  }
+
+  .knopfbox {
+    text-align: left;
+  }
+
+  .followbox {
+    margin-left: 0;
+  }
+
+  .card {
+    margin: 2rem 0;
+  }
+}

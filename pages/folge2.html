@@ -1,0 +1,141 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../CSS/navbar.css">
+	<link rel="stylesheet" href="../CSS/podcast.css">
+	<link rel="stylesheet" href="../CSS/audio_player.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+	<title>Crypto Talks</title>
+
+	<script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous">
+    </script>
+	<script>
+        $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+    </script>
+
+    
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="../home.html"><img src="../IMG/logo.png"></a></li>
+            <li class="item button"><a href="../home.html">Podcast</a></li>
+			<li class="item button"><a href="./frag_uns.html">Frag Crypto Talks</a></li>
+            <li class="item button"><a href="https://linktr.ee/Krypto_Talk" target="blank">Subscribe</a></li>
+            <li class="toggle">
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </li>
+            
+        </ul>
+    </nav>
+	<div class="mid">
+		<div class="container display">
+			<div class="coverbox">
+				<img class="cover" src="../IMG/cover.png">
+			</div>
+			<div class="textbox">
+				<div class="titel">
+					Minen: aus Energy Geld
+				</div>
+				
+
+				<div class="audio_player">
+					<audio class="audio-nfs" src="../downloads/Folge1.mp3"></audio>
+					<div class="tl-nfsplayer">
+						<div class="tl-nfs-player-box">
+							<div class="tl-nfs-player-arrow">
+								<div class="tl-nfs-play">
+									<i class="fal fa-play"></i>
+								</div>
+							</div>
+						</div>
+						<div class="tl-nfs-slidecontainer">
+							<div class="time-podcast1">
+								00:00
+							</div>
+							<input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+							<div class="nfs-buffer"></div>
+							<div class="time-podcast2">
+								00:00
+							</div>
+						</div>
+						<div class="tl-nfs-volume">
+							<div class="vlm-icon">
+								<i class="fal fa-volume-up"></i>
+							</div>
+							<div class="tl-nfs-slidecontainer-volume">
+								<input type="range" min="1" max="100" value="50" class="volume-mohtva" id="myvloume">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="beschreibung">
+					Hier Sprechen wir über das Minen von Kryptowährung und dessen Gewinn. Außerdem sprechen wir über die Frage wie schädlich Minen eigentlich für die Umwelt ist. Seien sie gespannt wie ein flitzebogen auf mehr von Crypto Talk.
+				</div>
+				<div class="buttonbox">
+					<a href="https://linktr.ee/Krypto_Talk" target="blank">
+						<button class="button subscribe space">Subscribe to Podcast</button>
+					</a>
+
+					<a href="../downloads/Folge1.mp3" download="Die_Krypto_Basics">
+						<button class="button subscribe space">Download</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+			<div class="container_footer">
+				<div class="impressum"><a href="">Impressum</a></div>
+				<div class="agb"><a href="">AGB</a></div>
+				<div class="datenschutz"><a href="">Datenschutz</a></div>
+			</div>
+		</footer>
+
+			<script
+				src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+				integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+				crossorigin="anonymous"
+			></script>
+			<script
+				src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+				integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+				crossorigin="anonymous"
+			></script>
+			<script>
+				const menuBtn = document.querySelector('.menu-btn');
+				let menuOpen = false;
+				menuBtn.addEventListener('click', () => {
+				if(!menuOpen) {
+					menuBtn.classList.add('open');
+					menuOpen = true;
+				} else {
+					menuBtn.classList.remove('open');
+					menuOpen = false;
+				}
+				});
+			</script>
+			<script src="../JS/player.js"></script>
+	</body>
+</html>
+

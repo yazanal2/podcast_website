@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Crypto Talks - Subscribe{% endblock %}
+
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/subscribe.css') }}">{% endblock %}
+
+{% block content %}
+
+<div class="container_subscribe">
+    <a href="https://www.youtube.com/" target="blank">
+        <div class="container_youtube">
+                <div class="fa fa-youtube"></div>
+                Youtube
+        </div>
+    </a>
+    <a href="https://www.instagram.com/" target="blank">
+        <div class="container_instagram">
+                <div class="fa fa-instagram"></div>
+                Instagram
+        </div>
+    </a>
+    <a href="https://twitter.com/home" target="blank">
+        <div class="container_twitter">
+                <div class="fa fa-twitter"></div>
+                Twitter
+        </div>
+    </a>
+</div>
+
+{% endblock %}

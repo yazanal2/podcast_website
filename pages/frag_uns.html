@@ -1,0 +1,108 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+	<link rel="stylesheet" href="../CSS/frag_uns.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+    <title>Crypto Talks</title>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+    </script>
+    
+
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="../home.html"><img src="../IMG/logo.png"></a></li>
+            <li class="item button"><a href="../home.html">Podcast</a></li>
+            <li class="item button"><a href="../pages/ask.html">Frag Crypto Talks</a></li>
+            <li class="item button"><a href="https://linktr.ee/Krypto_Talk" target="blank">Subscribe</a></li>
+            <li class="toggle">
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            </li>
+            
+        </ul>
+    </nav>
+	<div class="mid">
+		<div class="frag_uns">
+			<form method="POST" enctype=multipart/form-data style="margin-left: 30%;margin-right: 30%;">
+			<h3>Deine Frage an Crypto Talks</h3>
+				<div class="form-group">
+				<label for="name">Name</label>
+				<input
+					    type="text"
+						class="form-control"
+						id="name"
+						placeholder="Dein Name"
+					/>
+				</div>
+			<div class="form-group">
+				<label for="frage">Frage</label>
+			    <textarea
+						type="text"
+						class="form-control"
+						id="frage"
+						cols="30"
+						rows="4"
+						placeholder="Deine Frage"></textarea>
+				</div>
+			<br/>
+				<button type="submit" class="btn btn-primary" style="background-color: #ff0055; border-color: black;">Submit</button>
+			  </form>
+		</div>
+	</div>
+	<footer>
+        <div class="container_footer">
+            <div class="impressum"><a href="">Impressum</a></div>
+            <div class="agb"><a href="">AGB</a></div>
+            <div class="datenschutz"><a href="">Datenschutz</a></div>
+        </div>
+    </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const menuBtn = document.querySelector('.menu-btn');
+            let menuOpen = false;
+            menuBtn.addEventListener('click', () => {
+            if(!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+            });
+        </script>
+</body>
+</html>

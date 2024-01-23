@@ -1,0 +1,26 @@
+Wenn man auf login geht gibt es gerade zwei test accounts die Ich erstellt habe.
+
+1. User:
+email: test@gmail.com
+password: test123
+
+2. Admin:
+email: test2@gmail.com
+password: test123
+
+
+Der Admin hat die Möglichkeit Podcast auf die webseite hochzuladen.
+Auf http://127.0.0.1:5000/admin kann der Admin einen Titel, Beschreibung und
+mp3 datei auswählen und so eine neue Folge veröffentlichen. Texte und mp3 dateien
+zum testen ist im ordner Info_files/podcast_temp vorhanden. 
+
+
+Die Seite "Frag Krypto Talk" kann man nur sehen und öffnen wenn man mit einem account 
+angemeldet ist und die Fragen mit dem zugehörigen user accounts werden in einer datenbank 
+gespeichert.
+
+Wenn Sie noch Fragen haben schreiben Sir mir oder Ich zeige ihnen gerne alle Funktionen 
+meiner webseite in der Schule.
+
+Mfg
+Al Hallak
